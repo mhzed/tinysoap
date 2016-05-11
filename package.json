@@ -1,17 +1,17 @@
 {
-  "name": "tinysoap",
-  "version": "1.0.2",
+  "name": "browser-soap",
+  "version": "1.0.0",
   "description": "A minimal SOAP client in javascript, so tiny it even runs in browser",
   "engines": {
     "node": ">=0.8.0"
   },
-  "author": "zed <mhzedd@gmail.com>",
+  "author": "Johniak <romaniakjan@gmail.com>",
   "dependencies": {
     "node-xml": "1.0.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mhzed/tinysoap.git"
+    "url": "https://github.com/johniak/browser-soap.git"
   },
   "main": "./index.js",
   "directories": {
