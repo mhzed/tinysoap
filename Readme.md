@@ -1,12 +1,10 @@
 This module lets you connect to web services using SOAP, in pure javascript, using node or browser.
 
-This module is branched from node module "soap@0.2.6".  Specific changes are:
- 
-* soap server removed
-* use node-xml@1.0.2 as xml parser, because its pure javascript
-* use jQuery $.ajax for http request, to support browser
-* removed all other dependencies on nodejs modules 
-  
+This module is forked from node module "tinysoap@1.0.2".  Specific changes are:
+
+* You don't need jQuery anymore
+
+
 Features (copied from soap@0.2.6 Readme.md):
 
 * Very simple API
@@ -20,29 +18,31 @@ Features (copied from soap@0.2.6 Readme.md):
 Install with [npm](http://github.com/isaacs/npm):
 
 ```
-  npm install tinysoap
+  npm install johniak/browser-soap
 ```
 
 ## Browser
 
-Embed jquery script first, for example:
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 Then embed the file "./tinysoap-browser-min.js"
 
     <script src="tinysoap-browser-min.js"></script>
-        
+
+Or in es6
+
+import soap from 'browser-soap'
+
 Then you write code such as:
 
     // in global scope:
     this.tinysoap.createClient("/ACMEWebService?WSDL", function(err, client) {
-      if (!err) 
+      if (!err)
         console.log(client);  // all methods are stored in client
     });
-    
+
 JSONP is not currently supported, but should be very simple to add...
-    
+
 ## Module
 
 ### soap.createClient(url, callback) - create a new SOAP client from a WSDL url
