@@ -25,9 +25,9 @@ Install with [npm](http://github.com/isaacs/npm):
 
 
 
-Then embed the file "./tinysoap-browser-min.js"
+Then embed the file "./browser-soap-min.js"
 
-    <script src="tinysoap-browser-min.js"></script>
+    <script src="browser-soap-min.js"></script>
 
 Or in es6
 
@@ -36,7 +36,7 @@ import soap from 'browser-soap'
 Then you write code such as:
 
     // in global scope:
-    this.tinysoap.createClient("/ACMEWebService?WSDL", function(err, client) {
+    this.soap.createClient("/ACMEWebService?WSDL", function(err, client) {
       if (!err)
         console.log(client);  // all methods are stored in client
     });

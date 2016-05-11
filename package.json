@@ -18,7 +18,7 @@
     "lib": "./lib"
   },
   "scripts": {
-    "build": "bna -f index.js && uglifyjs index.fused.js -c -m > tinysoap-browser-min.js && rm index.fused.js"
+    "build": "bna -f index.js && uglifyjs index.fused.js -c -m > browser-soap-min.js && rm index.fused.js"
   },
   "keywords": [
     "soap",
