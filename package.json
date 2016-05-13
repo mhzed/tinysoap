@@ -1,6 +1,6 @@
 {
   "name": "browser-soap",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A minimal SOAP client in javascript, so tiny it even runs in browser",
   "engines": {
     "node": ">=0.8.0"
