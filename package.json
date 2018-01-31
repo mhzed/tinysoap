@@ -1,6 +1,6 @@
 {
   "name": "tinysoap",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A minimal SOAP client in javascript, so tiny it even runs in browser",
   "engines": {
     "node": ">=0.8.0"
@@ -18,7 +18,7 @@
     "lib": "./lib"
   },
   "scripts": {
-    "build": "bna -f index.js && uglifyjs index.fused.js -c -m > tinysoap-browser-min.js && rm index.fused.js"
+    "build": "bna -f index.js && ./node_modules/.bin/uglifyjs index.fused.js -c -m > tinysoap-browser-min.js && rm index.fused.js"
   },
   "keywords": [
     "soap",
@@ -30,5 +30,8 @@
       "type": "MIT License",
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
-  ]
+  ],
+  "devDependencies": {
+    "uglify-js": "^3.3.9"
+  }
 }
