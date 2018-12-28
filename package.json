@@ -25,12 +25,7 @@
     "browser",
     "client"
   ],
-  "licenses": [
-    {
-      "type": "MIT License",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
+  "license" : "MIT",
   "devDependencies": {
     "uglify-js": "^3.3.9"
   }
